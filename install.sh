@@ -1,26 +1,30 @@
-#!/bin/sh
+#!/bin/bash
+set +ex
 
-# https://brew.sh/index_fr
-if ! brew -v &> /dev/null
-then
-  echo "brew could not be found. Installing..."
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  exit
-fi
+# # https://brew.sh/index_fr
+# if ! brew -v &> /dev/null
+# then
+#   echo "brew could not be found. Installing..."
+#   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#   exit
+# fi
 
-brew update
+# brew update
 
-brew install --cask visual-studio-code
-brew install --cask clipy
-brew install --cask intellij-idea-ce
-# brew install --cask firefox
-# brew install --cask wireshark
-# brew install --cask miro
-# brew install --cask dbeaver-community
+# brew install --cask visual-studio-code
+# brew install --cask clipy
+# brew install --cask intellij-idea-ce
+# brew install stow
+# # brew install --cask firefox
+# # brew install --cask wireshark
+# # brew install --cask miro
+# # brew install --cask dbeaver-community
 
-# https://ohmyz.sh/#install
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# # https://ohmyz.sh/#install
+# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-ln -s $(pwd)/oh-my-zsh/themes/ptung.zsh-theme ~/.oh-my-zsh/themes/ptung.zsh-theme
-sed -i '' 's/ZSH_THEME=.*/ZSH_THEME="ptung"/' ~/.zshrc
-source ~/.zshrc
+# ln -s $(pwd)/oh-my-zsh/themes/ptung.zsh-theme ~/.oh-my-zsh/themes/ptung.zsh-theme
+# sed -i '' 's/ZSH_THEME=.*/ZSH_THEME="ptung"/' ~/.zshrc
+# source ~/.zshrc
+
+stow git
