@@ -30,3 +30,5 @@
   ignored = !git ls-files -v | grep "^[[:lower:]]"
 [push]
   default = simple
+[init]
+	defaultBranch = main
