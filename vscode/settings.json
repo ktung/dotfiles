@@ -1,0 +1,11 @@
+{
+    "editor.tabSize": 2,
+    "telemetry.telemetryLevel": "off",
+    "window.title": "${activeEditorLong}${separator}${rootName} ${dirty}",
+    "editor.renderWhitespace": "boundary",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "search.showLineNumbers": true
+}
