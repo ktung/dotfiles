@@ -7,5 +7,6 @@
     "editor.smoothScrolling": true,
     "workbench.list.smoothScrolling": true,
     "workbench.editor.highlightModifiedTabs": true,
-    "search.showLineNumbers": true
+    "search.showLineNumbers": true,
+    "editor.stickyScroll.enabled": true
 }
