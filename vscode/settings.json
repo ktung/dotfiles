@@ -8,5 +8,7 @@
     "workbench.list.smoothScrolling": true,
     "workbench.editor.highlightModifiedTabs": true,
     "search.showLineNumbers": true,
-    "editor.stickyScroll.enabled": true
+    "editor.stickyScroll.enabled": true,
+    "editor.linkedEditing": true,
+    "files.autoSave": "onFocusChange"
 }
