@@ -10,5 +10,17 @@
     "search.showLineNumbers": true,
     "editor.stickyScroll.enabled": true,
     "editor.linkedEditing": true,
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "i18n-ally.displayLanguage": "en",
+    "editor.formatOnSave": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace"
 }
