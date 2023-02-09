@@ -1,7 +1,10 @@
 # https://starship.rs/config/
 # ~/.config/starship.toml
 
-format = '$character$time$all'
+format = '$character$time$aws$all'
+
+scan_timeout = 30
+command_timeout = 1000
 
 [character]
 success_symbol = '[➜](bold green)'
@@ -21,9 +24,18 @@ staged = '[+${count}](green)'
 modified = '!${count}'
 deleted = '✘${count}'
 
+[aws]
+format = '[($profile)(\[$region\] )(\[$duration\] )]($style)'
+
+[aws.region_aliases]
+ca-central-1 = 'CA'
+eu-west-1 = 'IR'
 
 [kubernetes]
 disabled = false
+format = '[$context( \($namespace\))]($style) in '
+
+[kubernetes.context_aliases]
 
 
 [line_break]
