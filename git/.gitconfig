@@ -1,0 +1,39 @@
+[user]
+  email = 
+  name = ktung
+[core]
+  editor = vim
+  excludesfile = ${HOME}/.gitignore
+  autocrlf = false
+[color]
+  ui = true
+[credential]
+  helper = "cache --timeout=3600"
+[merge]
+  tool = vimdiff
+[mergetool]
+  keeptemporaries = false
+  keepbackups = false
+  prompt = false
+[alias]
+  last = log -1 --stat
+  lg = log --graph --abbrev-commit --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  cp = cherry-pick
+  co = checkout
+  cl = clone
+  ci = commit
+  st = status -sb
+  br = branch
+  unstage = reset HEAD --
+  dc = diff --cached
+  ignore = update-index --assume-unchanged
+  unignore = update-index --no-assume-unchanged
+  ignored = !git ls-files -v | grep "^[[:lower:]]"
+  pushfwl = push --force-with-lease
+  reflg = reflog --date=iso
+[push]
+  default = simple
+[init]
+  defaultBranch = main
+[pull]
+  rebase = true
