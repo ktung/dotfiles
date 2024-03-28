@@ -31,6 +31,7 @@
   ignored = !git ls-files -v | grep "^[[:lower:]]"
   pushfwl = push --force-with-lease
   reflg = reflog --date=iso
+  prunebr = "!git fetch -pP ; git branch --merged | grep -Ev \"(^\\*|master|main|develop)\" | xargs git branch -d"
 [push]
   default = simple
 [init]
