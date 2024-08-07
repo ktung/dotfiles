@@ -29,6 +29,7 @@
   ignore = update-index --assume-unchanged
   unignore = update-index --no-assume-unchanged
   ignored = !git ls-files -v | grep "^[[:lower:]]"
+  pushh = push origin HEAD
   pushfwl = push --force-with-lease
   reflg = reflog --date=iso
   prunebr = "!git fetch -pP ; git branch --merged origin/develop | grep -Ev \"(^\\*|master|main|develop)\" | xargs git branch -d"
