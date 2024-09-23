@@ -1,6 +1,3 @@
-[user]
-  email = 
-  name = ktung
 [core]
   editor = vim
   excludesfile = ${HOME}/.gitignore
@@ -40,3 +37,11 @@
   defaultBranch = main
 [pull]
   rebase = true
+[commit]
+  gpgsign = true
+
+[includeIf "hasconfig:remote.*.url:git@gitlab.com:*/**"]
+path = ~/.gitconfig.gitlab
+
+[includeIf "hasconfig:remote.*.url:git@github.com:*/**"]
+path = ~/.gitconfig.github

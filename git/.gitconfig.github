@@ -1,0 +1,4 @@
+[user]
+  name = 
+  email = your.personal@email.here
+  signingKey = <PERSONAL GPG SIGNING KEY ID>
