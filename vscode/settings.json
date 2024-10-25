@@ -22,5 +22,6 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.formatOnSaveMode": "modificationsIfAvailable"
 }
