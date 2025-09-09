@@ -1,4 +1,7 @@
+plugins=(tmux git)
 
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux
+ZSH_TMUX_AUTOSTART=true
 
 alias pomowork="timer 60m --format 24h -n Work &&
   terminal-notifier -message 'Pomodoro' \
