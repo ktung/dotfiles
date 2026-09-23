@@ -1,0 +1,2 @@
+# https://ghostty.org/docs/features/ssh#shell-integration
+shell-integration-features = ssh-env,ssh-terminfo
